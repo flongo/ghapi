@@ -1,10 +1,8 @@
-var http = require('http');
 var express = require('express');
 var githubRequestHandler = require('./githubRequestHandler');
 
 var app = express();
-
-app.set('port', (process.env.PORT || 8080));
+var port = process.env.PORT || 8080;
 
 app.get('/topRepo/:userHandle', (req, res) => {
     githubRequestHandler
@@ -15,4 +13,6 @@ app.get('/topRepo/:userHandle', (req, res) => {
         );
 });
 
-http.createServer(app).listen(app.get('port'));
+app.listen(port, function () {
+  console.log('ghapi listening on port:', port);
+});
