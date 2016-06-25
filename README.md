@@ -1,5 +1,7 @@
 # GHAPI
 
+[![Build Status](https://travis-ci.org/flongo/ghapi.svg?branch=master)](https://travis-ci.org/flongo/ghapi)
+
 Ghapi exposes an HTTP API that, given a user's GitHub handle, retrieves the top five public repositories owned by that user, ordered by size.
 
 ## API
