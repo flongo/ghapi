@@ -1,0 +1,21 @@
+{
+    "name" : "ghapi",
+    "version" : "1.0.0",
+    "description" : "API to retrieve the top 5 github public repositories for a user handler",
+    "main" : "src/app.js",
+    "scripts" : {
+        "test" : "mocha test/githubRequestHandlerTest.js",
+        "start" : "node src/app.js"
+    },
+    "author" : "",
+    "license" : "",
+    "dependencies" : {
+        "express" : "~4.13.4",
+        "request" : "~2.72.0"
+    },
+    "devDependencies" : {
+        "mocha" : "~2.5.3",
+        "chai" : "~3.5.0",
+        "chai-as-promised" : "~5.3.0"
+    }
+}
