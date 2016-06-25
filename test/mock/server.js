@@ -12,7 +12,9 @@ app.get('/users/:userHandle/repos', (req, res) => {
     }, 10);
 });
 
+// Mock server
 var server = http.createServer(app);
+
 var start = () => {
     return new Promise(resolve => {
         server.listen(3000, resolve);
@@ -24,7 +26,6 @@ var stop = () => {
         server.close(resolve);
     });
 };
-
 
 module.exports = {
     start,

@@ -2,6 +2,8 @@ var express = require('express');
 var githubRequestHandler = require('./githubRequestHandler');
 
 var app = express();
+
+// Retrieve port assigned by Heroku
 var port = process.env.PORT || 8080;
 
 app.get('/topRepo/:userHandle', (req, res) => {
