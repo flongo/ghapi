@@ -7,8 +7,12 @@
         "test" : "mocha test/githubRequestHandlerTest.js",
         "start" : "node src/app.js"
     },
-    "author" : "",
-    "license" : "",
+    "author" : "Francesco Longo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/flongo/ghapi.git"
+    },
+    "license" : "ISC",
     "dependencies" : {
         "express" : "~4.13.4",
         "request" : "~2.72.0"
