@@ -4,6 +4,8 @@ var githubRequestHandler = require('./githubRequestHandler');
 
 var app = express();
 
+app.set('port', (process.env.PORT || 8080));
+
 app.get('/topRepo/:userHandle', (req, res) => {
     githubRequestHandler
         .getTopRepositories(req.params.userHandle)
@@ -13,4 +15,4 @@ app.get('/topRepo/:userHandle', (req, res) => {
         );
 });
 
-http.createServer(app).listen(3000);
+http.createServer(app).listen(app.get('port'));
