@@ -7,7 +7,7 @@ Ghapi exposes an HTTP API that, given a user's GitHub handle, retrieves the top 
 ## API
 
 ```
-topReco/[user]
+topRepo/[user]
 ```
 where `user` is a GitHub user.
 
